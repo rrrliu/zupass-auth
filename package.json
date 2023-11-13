@@ -1,37 +1,37 @@
 {
-    "name": "zuauth",
-    "version": "0.3.0",
-    "license": "GPL-3.0-or-later",
-    "main": "./dist/index.js",
-    "types": "./dist/index.d.ts",
-    "files": [
-        "./src/*",
-        "./dist/*",
-        "./README.md",
-        "./LICENSE"
-    ],
-    "scripts": {
-        "build": "tsup src/index.ts --dts",
-        "dev": "tsup src/index.ts --watch",
-        "prepublishOnly": "yarn build"
-    },
-    "dependencies": {
-        "@pcd/eddsa-ticket-pcd": "^0.3.0",
-        "@pcd/pcd-types": "^0.8.0",
-        "@pcd/semaphore-identity-pcd": "^0.8.0",
-        "@pcd/zk-eddsa-event-ticket-pcd": "^0.2.1",
-        "react": "^18",
-        "react-dom": "^18"
-    },
-    "devDependencies": {
-        "@types/node": "^20",
-        "@types/react": "^18",
-        "@types/react-dom": "^18",
-        "tsup": "^7.2.0",
-        "typescript": "^5"
-    },
-    "publishConfig": {
-        "access": "public"
-    },
-    "packageManager": "yarn@4.0.1"
+  "name": "zupass-auth",
+  "version": "0.0.4",
+  "license": "GPL-3.0-or-later",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "./src/*",
+    "./dist/*",
+    "./README.md",
+    "./LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --dts",
+    "dev": "tsup src/index.ts --watch",
+    "prepublishOnly": "yarn build"
+  },
+  "dependencies": {
+    "@pcd/eddsa-ticket-pcd": "^0.3.0",
+    "@pcd/pcd-types": "^0.8.0",
+    "@pcd/semaphore-identity-pcd": "^0.8.0",
+    "@pcd/zk-eddsa-event-ticket-pcd": "^0.2.1",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "tsup": "^7.2.0",
+    "typescript": "^5"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "packageManager": "yarn@4.0.1"
 }
